@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/txtViewMealSuggestion"
+        android:layout_width="356dp"
+        android:layout_height="143dp"
+        android:fontFamily="sans-serif-black"
+        android:shadowColor="#181606"
+        android:text="Meal Suggestions :"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorHighlight="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="158dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="68dp"
+        android:background="#EB200F"
+        android:text="Reset"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSuggestMeal"
+        android:layout_width="172dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginBottom="16dp"
+        android:background="#EB200F"
+        android:text="Suggestion"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnReset"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <EditText
+        android:id="@+id/edtTextTimeOfDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Time Of Day"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/txtViewMealSuggestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
